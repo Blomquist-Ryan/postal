@@ -15,7 +15,7 @@ express()
   .set('view engine', 'ejs')
 
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/home', (req, res) => console.log("received request for home"), res.write("home page"))
+  .get('/home', function (req, res) { console.log("received request for home"); res.write("home page")})
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
   function form(){
