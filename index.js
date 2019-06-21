@@ -13,9 +13,9 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('public', path.join(__dirname, 'public'))
   .set('view engine', 'ejs')
-  .set('view engine', 'html')
+
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/from', (req, res) => res.render('from'))
+  .get('/home', (req, res) => console.log("received request for home"), res.write("home page"))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
   function form(){
