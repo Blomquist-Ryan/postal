@@ -85,6 +85,6 @@ function computeRate(Response, type, weight){
   }
 
  const params = {type: type, weight: weight, price: price};
-    res.render('pages/result', params);
+    Response.render('pages/result', params);
 }
   
