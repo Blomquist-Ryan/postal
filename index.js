@@ -35,7 +35,7 @@ function computeRate(Response, type, weight){
   const price = 0;
 
   if(type == "stamped"){
-    if(wieght < 1){
+    if(weight < 1){
       price = .55;
     } else if(weight < 3.5){
       price = .55 + ((weight - 1) * .15);
@@ -46,7 +46,7 @@ function computeRate(Response, type, weight){
     type = "stamped letter";
 
   } else if(type == "metered"){
-    if(wieght < 1){
+    if(weight < 1){
       price = .50;
     } else if(weight < 3.5){
       price = .50 + ((weight - 1) *.15);
@@ -58,7 +58,7 @@ function computeRate(Response, type, weight){
     type = "metered letter";
 
   } else if(type == "flat"){
-    if(wieght < 1){
+    if(weight < 1){
       price = 1;
     } else if(weight < 13){
       price = 1 + (((weight-1) *.15));
@@ -70,7 +70,7 @@ function computeRate(Response, type, weight){
 
 
   } else if(type == "retail"){
-    if(wieght < 4){
+    if(weight < 4){
       price = 3.66;
     } else if(weight < 8){
       price = 4.39;
