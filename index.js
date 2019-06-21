@@ -16,7 +16,7 @@ express()
 
   .get('/', (req, res) => res.render('pages/index'))
   .get('/from',  (req, res) => res.render('pages/from'))
-  .get('/calculate')
+  .get('/calculate', calc)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
   function calc(req, res){
