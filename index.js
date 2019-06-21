@@ -16,8 +16,16 @@ express()
 
   .get('/', (req, res) => res.render('pages/index'))
   .get('/from',  (req, res) => res.render('pages/from'))
+  .get('/calculate')
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
-  function form(){
+  function calc(req, res){
+    const type = req.query.package;
+    const weight = req.query.weight;
+
+    const params = {type: type, weight: weight};
+    res.render('pages/result', params);
 
   }
+
+  
