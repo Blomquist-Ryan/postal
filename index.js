@@ -23,7 +23,7 @@ express()
     const type = req.query.package;
     const weight = req.query.weight;
 
-    computeRate(Res, type, weight);
+    computeRate(res, type, weight);
 
 
 
