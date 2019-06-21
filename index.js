@@ -32,7 +32,7 @@ express()
   }
 
 function computeRate(Response, type, weight){
-  const price = 0;
+  var price = 0;
 
   if(type == "stamped"){
     if(weight < 1){
