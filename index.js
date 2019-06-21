@@ -23,9 +23,16 @@ express()
     const type = req.query.package;
     const weight = req.query.weight;
 
+    //computeRate(Response, type, weight);
+
+
+
     const params = {type: type, weight: weight};
     res.render('pages/result', params);
 
   }
 
+function computeRate(Response, type, weight){
+
+}
   
