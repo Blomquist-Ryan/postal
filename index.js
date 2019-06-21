@@ -14,7 +14,7 @@ express()
   .set('public', path.join(__dirname, 'public'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/from', (req, res) => res.render('public/from'))
+  .get('/from', (req, res) => res.render('views'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
   function form(){
