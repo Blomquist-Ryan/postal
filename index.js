@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-App.set('public', _dirname + '/public');
+app.set('public', _dirname + '/public');
 
 
 express()
