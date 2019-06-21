@@ -6,14 +6,15 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+App.set('public', _dirname + '/public');
+
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
+  .get('/from', (req, res) => res.render('public'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
   function form(){
