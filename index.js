@@ -52,12 +52,12 @@ function computeRate(Response, type, weight){
       price = .50 + ((weight - 1) *.15);
 
     } else {
-      price = 1;
+      price = .95;
     }
 
     type = "metered letter";
 
-  } else if(type == "flat"){
+  } else if(type == "flats"){
     if(weight < 1){
       price = 1;
     } else if(weight < 13){
