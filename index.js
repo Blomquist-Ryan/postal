@@ -15,7 +15,7 @@ express()
   .set('view engine', 'ejs')
 
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/from',  (req, res) => res.render('pages/from'))
+  .get('/form',  (req, res) => res.render('pages/from'))
   .get('/calculate', calc)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
